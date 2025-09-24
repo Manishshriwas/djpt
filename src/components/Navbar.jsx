@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X , Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import login from "../pages/Login";
@@ -49,9 +49,9 @@ export default function Navbar() {
           {/* Actions */}
           <div className="hidden md:flex items-center space-x-2">
             <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
-              {isDark ? <Sun className="text-yellow-400"/> : <Moon className="text-gray-700"/>}
+              {isDark ? <Sun className="text-yellow-400" /> : <Moon className="text-gray-700" />}
             </button>
-            <button onClick={() => navigate("/login")  } className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-medium text-white">
+            <button onClick={() => navigate("/login")} className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-medium text-white">
               Sign In / Sign Up
             </button>
           </div>
@@ -68,15 +68,46 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-800 px-4 py-3 space-y-3">
-          <NavLink to="/" className="block hover:text-blue-600 dark:hover:text-blue-400">Home</NavLink>
-          <NavLink to="/about" className="block hover:text-blue-600 dark:hover:text-blue-400">About</NavLink>
-          <NavLink to="/service" className="block hover:text-blue-600 dark:hover:text-blue-400">SaaS</NavLink>
-          <NavLink to="/contact" className="block hover:text-blue-600 dark:hover:text-blue-400">Contact</NavLink>
-          <button onClick={() => navigate("/login")} className="w-full bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-medium mt-2 text-white">
+          <NavLink
+            to="/"
+            className="block hover:text-blue-600 dark:hover:text-blue-400"
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="block hover:text-blue-600 dark:hover:text-blue-400"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/service"
+            className="block hover:text-blue-600 dark:hover:text-blue-400"
+            onClick={() => setIsOpen(false)}
+          >
+            SaaS
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="block hover:text-blue-600 dark:hover:text-blue-400"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </NavLink>
+          <button
+            onClick={() => {
+              navigate("/login");
+              setIsOpen(false); // close after login click
+            }}
+            className="w-full bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-medium mt-2 text-white"
+          >
             Login
           </button>
         </div>
       )}
+
     </nav>
   );
 }

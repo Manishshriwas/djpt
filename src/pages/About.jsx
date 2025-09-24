@@ -71,7 +71,7 @@ const about = () => {
                 </div>
                 {/* Avatar */}
                 <img
-                  className="w-24 h-rounded rounded-full"
+                  className="w-20 h-30 h-rounded rounded-full"
                   src={r}
                   alt="Ramakant Rajpoot"
                 />
@@ -81,10 +81,10 @@ const about = () => {
               </p>
             </div>
 
-            {/* Co-Founder */}      
+            {/* Co-Founder */}
             <div>
               <div className="flex items-center mb-4 gap-x-4">
-             
+
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                     Kartikey
@@ -93,12 +93,12 @@ const about = () => {
                     Co-Founder
                   </p>
                 </div>
-             
-               <img
-  className="w-24 h-rounded rounded-full "
-  src={k}
-  alt="Kartikey Rajpoot"
-/>
+
+                <img
+                  className="w-20 h-30 h-rounded rounded-full "
+                  src={k}
+                  alt="Kartikey Rajpoot"
+                />
               </div>
               <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
                 Kartikey is a dynamic entrepreneur with a strong background in software

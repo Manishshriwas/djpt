@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -24,7 +26,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/service' element={<Service />} />
           <Route path='/login' element={<Login />} />
-          /* <Route path='/register' element={<Register />} /> 
+          { /* <Route path='/register' element={<Register />} /> */ }
         </Routes>
         <Footer />
       </BrowserRouter>
