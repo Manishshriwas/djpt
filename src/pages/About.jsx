@@ -1,5 +1,7 @@
 import React from 'react'
 import D from '../assets/D.jpg'
+import r from '../assets/r.jpeg'
+import k from '../assets/k.jpeg'
 
 const about = () => {
   return (
@@ -69,8 +71,8 @@ const about = () => {
                 </div>
                 {/* Avatar */}
                 <img
-                  className="w-24 h-24 rounded-full"
-                  src={D}
+                  className="w-24 h-rounded rounded-full"
+                  src={r}
                   alt="Ramakant Rajpoot"
                 />
               </div>
@@ -92,11 +94,11 @@ const about = () => {
                   </p>
                 </div>
              
-                <img
-                  className="w-24 h-24 rounded-full"
-                  src={D}
-                  alt="Kartikey Rajpoot"
-                />
+               <img
+  className="w-24 h-rounded rounded-full "
+  src={k}
+  alt="Kartikey Rajpoot"
+/>
               </div>
               <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
                 Kartikey is a dynamic entrepreneur with a strong background in software
