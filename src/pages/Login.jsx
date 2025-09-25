@@ -1,4 +1,5 @@
 import { useState } from "react";
+import register from './Register'
 
 const Login = () => {
   const [formData, setFormData] = useState({
