@@ -16,7 +16,7 @@ const Contact = () => {
         {/* Google Map Logo */}
         <div className="flex justify-center mb-8">
           <a
-            href="https://maps.app.goo.gl/9wtUwNerzArVYBBeA" // <-- replace with actual company map link
+            href="https://www.google.com/maps/place/C%2FO+MOHD+AHSAN+BEHIND+BHARAT+PETROL+PUMP+JHANSI+JHANSI+284001+UTTAR+PRADESH/@25.4515473,78.5990181,17.34z/data=!4m14!1m7!3m6!1s0x3977770019df32bb:0x7050d8a6f671deaf!2sC%2FO+MOHD+AHSAN+BEHIND+BHARAT+PETROL+PUMP+JHANSI+JHANSI+284001+UTTAR+PRADESH!8m2!3d25.4509009!4d78.5987069!16s%2Fg%2F11xrfpfml7!3m5!1s0x3977770019df32bb:0x7050d8a6f671deaf!8m2!3d25.4509009!4d78.5987069!16s%2Fg%2F11xrfpfml7?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D" // <-- replace with actual company map link
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition"
