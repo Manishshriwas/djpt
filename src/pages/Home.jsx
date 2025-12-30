@@ -5,61 +5,69 @@ const Home = () => {
   return (
     <>
       <section className='bg-white dark:bg-gray-800 pt-20'>
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:px-12">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-            Welcome to
-            <span className="text-blue-600 dark:text-blue-500"> DJ TECH PVT LTD Digital Assets</span>
-          </h1>
-          <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'>
-            Your trusted partner for buying and selling digital assets and distributed ledger technology solutions
-          </p>
-          <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
-            <a href="#services" className='smooth-scroll inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900'>Explore Our Solutions
-              <ArrowRight className='ml-3' />
-            </a>
-            <a href="#contacts" className='smooth-scroll inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'>Schedule a Consultation</a>
-          </div>
+  <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:px-12 animate-hero">
+    
+    <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      Welcome to
+      <span className="text-blue-600 dark:text-blue-500">
+        {" "}DJ TECH PVT LTD Digital Assets
+      </span>
+    </h1>
+
+    <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'>
+      Your trusted partner for buying and selling digital assets and distributed ledger technology solutions
+    </p>
+
+    <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
+      <a href="#services" className='smooth-scroll inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900'>
+        Explore Our Solutions
+        <ArrowRight className='ml-3' />
+      </a>
+
+      <a href="#contacts" className='smooth-scroll inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'>
+        Schedule a Consultation
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="services" className='bg-gray-50 dark:bg-gray-900 py-12'>
+  <div className="px-4 mx-auto max-w-screen-xl">
+    <h2 className='mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl'>
+      Our Comprehensive Solutions
+    </h2>
+
+    <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
+
+      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
+        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
+          <Cloudy className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
         </div>
+        <h3 className="mb-2 text-xl font-bold dark:text-white">Cloud Computing</h3>
+        <p className='text-gray-500 dark:text-gray-400'>
+          Leverage the power of cloud computing to streamline your digital asset
+          management processes.
+        </p>
+      </div>
 
-      </section>
-
-      <section id="services" className='bg-gray-50 dark:bg-gray-900 py-12'>
-        <div className="px-4 mx-auto max-w-screen-xl">
-          <h2 className='mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl'>Our Comprehensive Solutions</h2>
-          <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
-            {/* <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-              <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-                <ArrowLeftRight className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
-              </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">P2P Transaction Management</h3>
-              <p className='text-gray-500 dark:text-gray-400'>Seamless peer-to-peer transaction management for Virtual Digital Assets (VDA), enabling secure, direct transfers between users without intermediaries.</p>
-
-            </div> */}
-
-            <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-              <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-                <Cloudy className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
-              </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Cloud Computing</h3>
-              <p className='text-gray-500 dark:text-gray-400'>Leverage the power of cloud computing to streamline your digital asset management processes, ensuring scalability, reliability, and security.</p>
-
-            </div>
-
-            <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-              <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-                <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
-              </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Customised Software Solutions</h3>
-              <p className='text-gray-500 dark:text-gray-400'>Leverage our expertise to develop custom software solutions tailored to your unique needs, ensuring optimal performance and reliability.</p>
-
-            </div>
-
-
-          </div>
-
+      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
+        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
+          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
         </div>
+        <h3 className="mb-2 text-xl font-bold dark:text-white">
+          Customised Software Solutions
+        </h3>
+        <p className='text-gray-500 dark:text-gray-400'>
+          Develop custom software solutions tailored to your unique needs.
+        </p>
+      </div>
 
-      </section>
+    </div>
+  </div>
+</section>
+
 
 
       <section className='dark:bg-gray-800 py-16 pb-16'>
