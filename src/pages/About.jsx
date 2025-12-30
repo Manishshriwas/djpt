@@ -66,7 +66,7 @@ const about = () => {
                     Ramakant Rajpoot
                   </h3>
                   <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
-                    Founder
+                    Co-Founder & Director
                   </p>
                 </div>
                 {/* Avatar */}
@@ -90,7 +90,7 @@ const about = () => {
                     Kartikey
                   </h3>
                   <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
-                    Co-Founder
+                    Co-Founder & Director
                   </p>
                 </div>
 
