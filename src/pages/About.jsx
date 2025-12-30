@@ -70,11 +70,11 @@ const about = () => {
                   </p>
                 </div>
                 {/* Avatar */}
-                <img
+                {/* <img
                   className="w-20 h-30 h-rounded rounded-full"
                   src={r}
                   alt="Ramakant Rajpoot"
-                />
+                /> */}
               </div>
               <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
                 RamaKant is a visionary leader with a passion for technology and innovation.
@@ -94,11 +94,11 @@ const about = () => {
                   </p>
                 </div>
 
-                <img
+                {/* <img
                   className="w-20 h-30 h-rounded rounded-full "
                   src={k}
                   alt="Kartikey Rajpoot"
-                />
+                /> */}
               </div>
               <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
                 Kartikey is a dynamic entrepreneur with a strong background in software

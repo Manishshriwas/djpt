@@ -27,14 +27,14 @@ const Home = () => {
         <div className="px-4 mx-auto max-w-screen-xl">
           <h2 className='mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl'>Our Comprehensive Solutions</h2>
           <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
-            <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
+            {/* <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
               <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
                 <ArrowLeftRight className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">P2P Transaction Management</h3>
               <p className='text-gray-500 dark:text-gray-400'>Seamless peer-to-peer transaction management for Virtual Digital Assets (VDA), enabling secure, direct transfers between users without intermediaries.</p>
 
-            </div>
+            </div> */}
 
             <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
               <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
