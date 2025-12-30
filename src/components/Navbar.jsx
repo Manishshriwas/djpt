@@ -48,9 +48,9 @@ export default function Navbar() {
 
           {/* Actions */}
           <div className="hidden md:flex items-center space-x-2">
-            <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+            {/* <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
               {isDark ? <Sun className="text-yellow-400" /> : <Moon className="text-gray-700" />}
-            </button>
+            </button> */}
             <button onClick={() => navigate("/login")} className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-medium text-white">
               Sign In / Sign Up
             </button>

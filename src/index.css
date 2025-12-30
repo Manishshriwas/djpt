@@ -11,3 +11,17 @@
     @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100;
   }
 }
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.7s ease-out forwards;
+}

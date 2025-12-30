@@ -63,41 +63,67 @@ const Home = () => {
 
 
       <section className='dark:bg-gray-800 py-16 pb-16'>
-        <div className='px-4 mx-auto max-w-screen-xl'>
-          <h2 className='mb-12 py-12 text-4xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-5xl'>Why Choose DJ TECH Digital Assets</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6 transition-all duration-300 hover:shadow-lg'>
-              <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
-              <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>Industry-leading Expertise</h3>
-              <p className='text-center text-gray-600 dark:text-gray-300'>Our team of seasoned
-                professionals brings decades of combined experience in blockchain technology, finance, and cybersecurity. We stay at the forefront of industry developments to provide
-                you with unparalleled insights and strategies.
-              </p>
-            </div>
+  <div className='px-4 mx-auto max-w-screen-xl'>
+    <h2 className='mb-12 py-12 text-4xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-5xl'>
+      Why Choose DJ TECH Digital Assets
+    </h2>
 
-            <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6 transition-all duration-300 hover:shadow-lg'>
-              <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
-              <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>Cutting-edge Technology</h3>
-              <p className='text-center text-gray-600 dark:text-gray-300'>We leverage state-of-the-art blockchain and fintech solutions to deliver superior results. Our proprietary algorithms and advanced analytics ensure optimal performance and security for your digital assets.
-              </p>
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6 transition-all duration-300 hover:shadow-lg'>
-              <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
-              <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>Client-Centric Approach</h3>
-              <p className='text-center text-gray-600 dark:text-gray-300'>Your success is our priority. We offer personalized strategies tailored to your unique needs and goals. Our dedicated support team is available 24/7 to assist you every step of the way.
-              </p>
-            </div>
+      <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6
+                      animate-slide-in [animation-delay:0ms]
+                      transition-all duration-300 hover:shadow-lg hover:scale-105'>
+        <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
+        <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>
+          Industry-leading Expertise
+        </h3>
+        <p className='text-center text-gray-600 dark:text-gray-300'>
+          Our team of seasoned professionals brings decades of combined experience
+          in blockchain technology, finance, and cybersecurity.
+        </p>
+      </div>
 
-            <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6 transition-all duration-300 hover:shadow-lg'>
-              <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
-              <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>Uncompromising Security</h3>
-              <p className='text-center text-gray-600 dark:text-gray-300'>We implement industry-leading security measures to protect your assets. Our multi-layered approach includes advanced encryption, regular security audits, and cold storage solutions for maximum protection.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6
+                      animate-slide-in [animation-delay:150ms]
+                      transition-all duration-300 hover:shadow-lg hover:scale-105'>
+        <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
+        <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>
+          Cutting-edge Technology
+        </h3>
+        <p className='text-center text-gray-600 dark:text-gray-300'>
+          We leverage state-of-the-art blockchain and fintech solutions with
+          advanced analytics.
+        </p>
+      </div>
+
+      <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6
+                      animate-slide-in [animation-delay:300ms]
+                      transition-all duration-300 hover:shadow-lg hover:scale-105'>
+        <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
+        <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>
+          Client-Centric Approach
+        </h3>
+        <p className='text-center text-gray-600 dark:text-gray-300'>
+          Your success is our priority with personalized strategies and support.
+        </p>
+      </div>
+
+      <div className='flex flex-col items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-6
+                      animate-slide-in [animation-delay:450ms]
+                      transition-all duration-300 hover:shadow-lg hover:scale-105'>
+        <CircleCheckBig className='w-10 h-10 mb-4 text-blue-600 dark:text-blue-400' />
+        <h3 className='mb-3 text-xl font-bold text-gray-900 dark:text-white'>
+          Uncompromising Security
+        </h3>
+        <p className='text-center text-gray-600 dark:text-gray-300'>
+          We implement advanced encryption, audits, and cold storage solutions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <section id='contacts' className='bg-gray-50 dark:bg-gray-900 py-12'>
         <div className='px-4 mx-auto max-w-screen-xl'>
