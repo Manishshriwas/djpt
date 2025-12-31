@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, ArrowLeftRight, Cloudy, LockKeyhole, CircleCheckBig } from 'lucide-react';
+import { ArrowRight, ArrowLeftRight, Cloudy, LockKeyhole, CircleCheckBig ,TrendingUp,Network,Code} from 'lucide-react';
 
 const Home = () => {
   return (
@@ -66,7 +66,7 @@ const Home = () => {
 
       <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
         <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+          <Network className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
         </div>
         <h3 className="mb-2 text-xl font-bold dark:text-white">
         Decentralized Asset Management
@@ -79,7 +79,7 @@ const Home = () => {
 
       <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
         <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+          <TrendingUp className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
         </div>
         <h3 className="mb-2 text-xl font-bold dark:text-white">
         Portfolio Optimization
@@ -92,7 +92,7 @@ const Home = () => {
 
       <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
         <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+          <Code className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
         </div>
         <h3 className="mb-2 text-xl font-bold dark:text-white">
         Software Services
