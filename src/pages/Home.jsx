@@ -64,6 +64,44 @@ const Home = () => {
         </p>
       </div>
 
+      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
+        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
+          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        </div>
+        <h3 className="mb-2 text-xl font-bold dark:text-white">
+        Decentralized Asset Management
+        </h3>
+        <p className='text-gray-500 dark:text-gray-400'>
+        Expert management of digital assets across various distributed ledger networks, ensuring optimal performance and security.
+        </p>
+      </div>
+
+
+      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
+        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
+          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        </div>
+        <h3 className="mb-2 text-xl font-bold dark:text-white">
+        Portfolio Optimization
+        </h3>
+        <p className='text-gray-500 dark:text-gray-400'>
+        Data-driven strategies to maximize your digital asset portfolio’s performance, leveraging advanced algorithms and market analysis.
+        </p>
+      </div>
+
+
+      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
+        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
+          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        </div>
+        <h3 className="mb-2 text-xl font-bold dark:text-white">
+        Software Services
+        </h3>
+        <p className='text-gray-500 dark:text-gray-400'>
+        Leverage our expertise to develop custom software solutions tailored to your unique needs, ensuring optimal performance and reliability.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
