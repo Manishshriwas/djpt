@@ -33,78 +33,146 @@ const Home = () => {
 </section>
 
 
-<section id="services" className='bg-gray-50 dark:bg-gray-900 py-12'>
+<section id="services" className="bg-gray-50 dark:bg-gray-900 py-12">
   <div className="px-4 mx-auto max-w-screen-xl">
-    <h2 className='mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl'>
+    <h2 className="mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
       Our Comprehensive Solutions
     </h2>
 
-    <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
+    {/* Marquee Wrapper */}
+    <div className="overflow-hidden group">
+      <div className="services-track flex gap-6 w-max">
 
-      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <Cloudy className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        {/* ===== ORIGINAL CARDS ===== */}
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <Cloudy className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Cloud Computing
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Leverage the power of cloud computing to streamline your digital asset
+            management processes.
+          </p>
         </div>
-        <h3 className="mb-2 text-xl font-bold dark:text-white">Cloud Computing</h3>
-        <p className='text-gray-500 dark:text-gray-400'>
-          Leverage the power of cloud computing to streamline your digital asset
-          management processes.
-        </p>
-      </div>
 
-      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <LockKeyhole className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <LockKeyhole className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Customised Software Solutions
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Develop custom software solutions tailored to your unique needs.
+          </p>
         </div>
-        <h3 className="mb-2 text-xl font-bold dark:text-white">
-          Customised Software Solutions
-        </h3>
-        <p className='text-gray-500 dark:text-gray-400'>
-          Develop custom software solutions tailored to your unique needs.
-        </p>
-      </div>
 
-      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <Network className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <Network className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Decentralized Asset Management
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Expert management of digital assets across distributed ledger networks.
+          </p>
         </div>
-        <h3 className="mb-2 text-xl font-bold dark:text-white">
-        Decentralized Asset Management
-        </h3>
-        <p className='text-gray-500 dark:text-gray-400'>
-        Expert management of digital assets across various distributed ledger networks, ensuring optimal performance and security.
-        </p>
-      </div>
 
-
-      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <TrendingUp className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Portfolio Optimization
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Data-driven strategies to maximize performance.
+          </p>
         </div>
-        <h3 className="mb-2 text-xl font-bold dark:text-white">
-        Portfolio Optimization
-        </h3>
-        <p className='text-gray-500 dark:text-gray-400'>
-        Data-driven strategies to maximize your digital asset portfolio’s performance, leveraging advanced algorithms and market analysis.
-        </p>
-      </div>
 
-
-      <div className='service-card bg-white dark:bg-gray-800 rounded-lg shadow-md p-6'>
-        <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900'>
-          <Code className='w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300' />
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <Code className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Software Services
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Custom software services ensuring optimal reliability.
+          </p>
         </div>
-        <h3 className="mb-2 text-xl font-bold dark:text-white">
-        Software Services
-        </h3>
-        <p className='text-gray-500 dark:text-gray-400'>
-        Leverage our expertise to develop custom software solutions tailored to your unique needs, ensuring optimal performance and reliability.
-        </p>
-      </div>
 
+        {/* ===== DUPLICATE CARDS (REQUIRED FOR LOOP) ===== */}
+
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <Cloudy className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Cloud Computing
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Leverage the power of cloud computing to streamline your digital asset
+            management processes.
+          </p>
+        </div>
+
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <LockKeyhole className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Customised Software Solutions
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Develop custom software solutions tailored to your unique needs.
+          </p>
+        </div>
+
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <Network className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Decentralized Asset Management
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Expert management of digital assets across distributed ledger networks.
+          </p>
+        </div>
+
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Portfolio Optimization
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Data-driven strategies to maximize performance.
+          </p>
+        </div>
+
+        <div className="min-w-[260px] max-w-[260px] bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900">
+            <Code className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+            Software Services
+          </h3>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Custom software services ensuring optimal reliability.
+          </p>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
+
 
 
 

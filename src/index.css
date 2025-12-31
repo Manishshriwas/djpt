@@ -52,3 +52,35 @@
   transform: translateY(0) scale(1);
   transition: all 0.7s ease-out;
 }
+
+
+
+
+
+/* Infinite cyclic marquee */
+.services-track {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.group:hover .services-track {
+  animation-play-state: paused;
+}
+
+/* Move exactly half width (because content is duplicated) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .services-track {
+    animation: none;
+  }
+}
