@@ -251,10 +251,10 @@ const Home = () => {
                 <strong>Basic Trading Services:</strong>
                 Starting from ₹8,500, basic order types, and standard transaction processing. Order value limit ₹200 - ₹2,000.
               </li>
-              <li>
+              {/* <li>
                 <strong>Advanced Trading Services:</strong>
                 Priced between ₹85,000 and ₹8,50,000, covering P2P transactions, API access, and advanced order types.
-              </li>
+              </li> */}
               <li>
                 <strong>Enterprise Transaction Solutions:</strong>
                 Custom pricing between ₹8,50,000 and ₹20,00,000, offering institutional-grade custody, dedicated infrastructure, and priority support.

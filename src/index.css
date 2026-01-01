@@ -145,8 +145,37 @@
 }
 
 
-/* ===== Navbar Animations ===== */
+/* ===== Navbar underline + active ===== */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
 
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #2563eb; /* blue-600 */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.nav-active::after {
+  width: 100%;
+}
+
+/* ===== Mobile menu animation ===== */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -160,33 +189,4 @@
 
 .animate-slide-down {
   animation: slideDown 0.25s ease-out forwards;
-}
-
-/* underline hover effect */
-.nav-link {
-  position: relative;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: #2563eb;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-/* Active navbar link */
-.nav-active {
-  color: #2563eb; /* blue-600 */
-  font-weight: 600;
-}
-
-.nav-active::after {
-  width: 100%;
 }

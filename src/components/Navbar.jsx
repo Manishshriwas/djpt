@@ -144,14 +144,14 @@ export default function Navbar() {
           <NavLink
             to="/"
             onClick={() => setIsOpen(false)}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-2"
           >
             <img
               src={D}
               alt="Logo"
-              className="h-10 w-10 rounded-full transition-transform duration-300 group-hover:rotate-6"
+              className="h-10 w-10 rounded-full"
             />
-            <span className="font-extrabold text-lg tracking-wide">
+            <span className="font-extrabold text-lg">
               DJ TECH <span className="text-blue-600">PVT LTD</span>
             </span>
           </NavLink>
@@ -164,7 +164,7 @@ export default function Navbar() {
             <NavLink to="/contact" className={linkClass}>Contact</NavLink>
           </div>
 
-          {/* CTA */}
+          {/* Desktop Button */}
           <div className="hidden md:flex">
             <button
               onClick={() => navigate("/login")}
@@ -173,7 +173,7 @@ export default function Navbar() {
                 text-white font-medium
                 px-6 py-2 rounded-xl
                 transition-all duration-300
-                hover:shadow-lg hover:-translate-y-0.5
+                hover:shadow-lg
               "
             >
               Sign In / Sign Up
@@ -193,47 +193,104 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       {isOpen && (
-        <div
-          className="
-            md:hidden
-            bg-white dark:bg-gray-900
-            border-t border-gray-200 dark:border-gray-800
-            px-6 py-4 space-y-4
-            animate-slide-down
-          "
-        >
-          <NavLink to="/" className={linkClass} onClick={() => setIsOpen(false)}>
-            Home
-          </NavLink>
-          <NavLink to="/about" className={linkClass} onClick={() => setIsOpen(false)}>
-            About
-          </NavLink>
-          <NavLink to="/service" className={linkClass} onClick={() => setIsOpen(false)}>
-            SaaS
-          </NavLink>
-          <NavLink to="/contact" className={linkClass} onClick={() => setIsOpen(false)}>
-            Contact
-          </NavLink>
+  <div
+    className="
+      md:hidden
+      fixed top-16 left-0 w-full
+      bg-white dark:bg-gray-900
+      border-t border-gray-200 dark:border-gray-800
+      px-6 py-6
+      animate-slide-down
+    "
+  >
+    {/* LINKS */}
+    <div className="flex flex-col space-y-4">
+      <NavLink
+        to="/"
+        onClick={() => setIsOpen(false)}
+        className={({ isActive }) =>
+          `
+          nav-link text-base
+          transition-colors duration-300
+          hover:text-blue-600
+          ${isActive ? "nav-active text-blue-600" : ""}
+          `
+        }
+      >
+        Home
+      </NavLink>
 
-          <button
-            onClick={() => {
-              navigate("/login");
-              setIsOpen(false);
-            }}
-            className="
-              w-full bg-blue-600 hover:bg-blue-700
-              text-white font-medium
-              py-2 rounded-xl
-              transition-all duration-300
-              hover:shadow-lg
-            "
-          >
-            Login
-          </button>
-        </div>
-      )}
+      <NavLink
+        to="/about"
+        onClick={() => setIsOpen(false)}
+        className={({ isActive }) =>
+          `
+          nav-link text-base
+          transition-colors duration-300
+          hover:text-blue-600
+          ${isActive ? "nav-active text-blue-600" : ""}
+          `
+        }
+      >
+        About
+      </NavLink>
+
+      <NavLink
+        to="/service"
+        onClick={() => setIsOpen(false)}
+        className={({ isActive }) =>
+          `
+          nav-link text-base
+          transition-colors duration-300
+          hover:text-blue-600
+          ${isActive ? "nav-active text-blue-600" : ""}
+          `
+        }
+      >
+        SaaS
+      </NavLink>
+
+      <NavLink
+        to="/contact"
+        onClick={() => setIsOpen(false)}
+        className={({ isActive }) =>
+          `
+          nav-link text-base
+          transition-colors duration-300
+          hover:text-blue-600
+          ${isActive ? "nav-active text-blue-600" : ""}
+          `
+        }
+      >
+        Contact
+      </NavLink>
+    </div>
+
+    {/* DIVIDER */}
+    <div className="my-6 border-t border-gray-200 dark:border-gray-700" />
+
+    {/* LOGIN BUTTON */}
+    <button
+      onClick={() => {
+        navigate("/login");
+        setIsOpen(false);
+      }}
+      className="
+        w-full bg-blue-600 hover:bg-blue-700
+        text-white font-medium
+        py-2.5 rounded-xl
+        transition-all duration-300
+        hover:shadow-lg hover:-translate-y-0.5
+        active:scale-95
+      "
+    >
+      Login
+    </button>
+  </div>
+)}
+
     </nav>
   );
 }
