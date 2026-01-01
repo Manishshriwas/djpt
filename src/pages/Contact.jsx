@@ -1,99 +1,135 @@
-import React from 'react'
-import { MapPin } from 'lucide-react' // using lucide-react icon (already available with shadcn/ui)
+import React from "react";
+import { MapPin } from "lucide-react";
+import contactImg from "../assets/con.jpg"; // <-- your image
 
 const Contact = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 px-4">
-      <div className="max-w-screen-md mx-auto">
-        {/* Header */}
-        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-6 text-center">
-          Contact Us
-        </h2>
-        <p className="text-lg text-gray-500 dark:text-gray-400 mb-12 text-center">
-          Have a question or want to work with us? Fill out the form below and we'll get back to you.
-        </p>
+    <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-900 py-20 px-4">
+      <div className="max-w-screen-xl mx-auto">
 
-        {/* Google Map Logo */}
-        <div className="flex justify-center mb-8">
+        {/* ===== TOP CENTER HEADER ===== */}
+        <div className="max-w-2xl mx-auto text-center mb-16">
+          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+            Contact Us
+          </h2>
+
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
+            Have a question or want to work with us? Our team would love to hear from you.
+          </p>
+
           <a
-            href="https://www.google.com/maps/place/C%2FO+MOHD+AHSAN+BEHIND+BHARAT+PETROL+PUMP+JHANSI+JHANSI+284001+UTTAR+PRADESH/@25.4515473,78.5990181,17.34z/data=!4m14!1m7!3m6!1s0x3977770019df32bb:0x7050d8a6f671deaf!2sC%2FO+MOHD+AHSAN+BEHIND+BHARAT+PETROL+PUMP+JHANSI+JHANSI+284001+UTTAR+PRADESH!8m2!3d25.4509009!4d78.5987069!16s%2Fg%2F11xrfpfml7!3m5!1s0x3977770019df32bb:0x7050d8a6f671deaf!8m2!3d25.4509009!4d78.5987069!16s%2Fg%2F11xrfpfml7?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D" // <-- replace with actual company map link
+            href="https://www.google.com/maps/place/C%2FO+MOHD+AHSAN+BEHIND+BHARAT+PETROL+PUMP+JHANSI+JHANSI+284001+UTTAR+PRADESH"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition"
+            className="inline-flex items-center justify-center gap-2
+                       text-blue-600 hover:text-blue-800
+                       font-medium transition"
           >
-            <MapPin size={28} />
-            <span className="font-medium">View on Google Maps</span>
+            <MapPin size={22} />
+            View on Google Maps
           </a>
         </div>
 
-        {/* Form */}
-        <form className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 space-y-6">
-          {/* Name */}
-          <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="name">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 text-sm"
-              placeholder="Your Name"
-              required
+        {/* ===== MAIN CONTENT ===== */}
+        <div className="grid md:grid-cols-2 gap-14 items-center">
+
+          {/* LEFT IMAGE */}
+          <div className="relative hidden md:block">
+            <img
+              src={contactImg}
+              alt="Contact"
+              className="w-full h-[520px] object-cover rounded-3xl shadow-xl"
             />
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/30 to-transparent" />
           </div>
 
-          {/* Email */}
-          <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 text-sm"
-              placeholder="you@example.com"
-              required
-            />
-          </div>
+          {/* RIGHT FORM */}
+          <form className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 md:p-10 space-y-6 shadow-lg">
 
-          {/* Phone */}
-          <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="phone">
-              Phone
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              className="bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 text-sm"
-              placeholder="+91 12345 67890"
-            />
-          </div>
+            {/* Name */}
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+                Name
+              </label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                required
+                className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600
+                           bg-white dark:bg-gray-700
+                           text-gray-900 dark:text-white
+                           placeholder-gray-400
+                           focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
 
-          {/* Message */}
-          <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="message">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows="4"
-              className="bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 text-sm"
-              placeholder="Your message..."
-              required
-            ></textarea>
-          </div>
+            {/* Email */}
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+                Email
+              </label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                required
+                className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600
+                           bg-white dark:bg-gray-700
+                           text-gray-900 dark:text-white
+                           placeholder-gray-400
+                           focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full inline-flex items-center justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer transition"
-          >
-            Send Message
-          </button>
-        </form>
+            {/* Phone */}
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+                Phone
+              </label>
+              <input
+                type="tel"
+                placeholder="+91 12345 67890"
+                className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600
+                           bg-white dark:bg-gray-700
+                           text-gray-900 dark:text-white
+                           placeholder-gray-400
+                           focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
+
+            {/* Message */}
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+                Message
+              </label>
+              <textarea
+                rows="4"
+                placeholder="Tell us about your project..."
+                required
+                className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600
+                           bg-white dark:bg-gray-700
+                           text-gray-900 dark:text-white
+                           placeholder-gray-400
+                           focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+              />
+            </div>
+
+            {/* Submit */}
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700
+                         text-white font-semibold
+                         py-3 rounded-xl
+                         transition-all duration-300
+                         hover:shadow-lg hover:-translate-y-0.5
+                         focus:ring-4 focus:ring-blue-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
