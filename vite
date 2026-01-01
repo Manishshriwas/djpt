@@ -1,0 +1,26 @@
+
+
+  VITE v7.1.6  ready in 237 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i basel
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+12:36:13 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css
+12:37:50 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css (x2)
+12:47:05 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css (x3)
+12:47:39 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css (x4)
+1:01:07 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css (x5)
+1:01:42 PM [vite] (client) hmr update /src/index.css
+1:01:50 PM [vite] (client) hmr update /src/css (x2)
+1:02:53 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css
+1:03:32 PM [vite] (client) hmr update /src/index.css
+1:05:35 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css
+1:06:04 PM [vite] (client) hmr update /src/index.css
+1:09:48 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css
+1:10:31 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css (x2)
+1:10:59 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css (x3)
+1:12:53 PM [vite] (client) hmr update /src/index.css
+1:14:42 PM [vite] (client) hmr update /src/pages/Home.jsx, /src/index.css
+1:15:32 PM [vite] (client) hmr update /src/index.css
