@@ -25,7 +25,7 @@ const RefundPolicy = () => {
                         </h2>
                         <p>
                             This Refund Policy applies to services provided by
-                            <strong> DEVKIJAGATRAJ Limited </strong>
+                            <strong> DEVKIJAGATRAJ Private Limited </strong>
                             ("Company", "we", "our", or "us"). By using our Services, you agree
                             to the refund terms outlined below.
                         </p>

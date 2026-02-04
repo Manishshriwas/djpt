@@ -24,7 +24,7 @@ const Terms = () => {
               1. Introduction
             </h2>
             <p>
-              Welcome to <strong>DEVKIJAGATRAJ Limited</strong> ("Company", "we", "our", or "us").
+              Welcome to <strong>DEVKIJAGATRAJ Private Limited</strong> ("Company", "we", "our", or "us").
               These Terms and Conditions ("Agreement") govern your use of our
               Software-as-a-Service (SaaS) platform and services related to the
               virtual digital assets business ("Services"). By accessing or
@@ -137,7 +137,7 @@ const Terms = () => {
               9. Governing Law and Dispute Resolution
             </h2>
             <p>
-              These Terms are governed by the laws of Bhiwani, Haryana. Any legal
+              These Terms are governed by the laws of Jhansi, Uttar Pradesh. Any legal
               proceedings shall fall under the jurisdiction of courts located in Bhiwani.
             </p>
           </div>
