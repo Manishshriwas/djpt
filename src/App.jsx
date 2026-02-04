@@ -11,6 +11,10 @@ import Service from './pages/Service.jsx'
 import Contact from './pages/Contact.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import RefundPolicy from './pages/refund-policy.jsx'
+import Terms from './pages/TermAndConditions.jsx'
+
 
 function App() {
 
@@ -27,6 +31,9 @@ function App() {
           <Route path='/service' element={<Service />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<Terms />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>
