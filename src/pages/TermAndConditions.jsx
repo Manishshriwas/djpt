@@ -138,7 +138,7 @@ const Terms = () => {
             </h2>
             <p>
               These Terms are governed by the laws of Jhansi, Uttar Pradesh. Any legal
-              proceedings shall fall under the jurisdiction of courts located in Bhiwani.
+              proceedings shall fall under the jurisdiction of courts located in Jhansi.
             </p>
           </div>
 
