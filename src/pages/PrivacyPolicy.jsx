@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </h1>
           <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-            Effective Date: 01 November 2024
+            Effective Date: 03 april 2025
           </p>
         </div>
 
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
               1. Introduction
             </h2>
             <p>
-              DEVKIJAGATRAJ Private Limited ("Company", "we", "our", or "us")
+              DEVKIJAGATRAJ TECH PRIVATE LIMITED ("Company", "we", "our", or "us")
               is committed to protecting your privacy. This Privacy Policy
               describes how we collect, use, and safeguard your information
               when you use our Software-as-a-Service (SaaS) platform and
@@ -124,7 +124,7 @@ const PrivacyPolicy = () => {
               9. Contact Information
             </h2>
             <p>
-              DEVKIJAGATRAJ Private Limited<br />
+              DEVKIJAGATRAJ TECH PRIVATE LIMITED<br />
               Email: <span className="font-medium">DEVKIJAGATRAJ@gmail.com</span>
             </p>
           </div>

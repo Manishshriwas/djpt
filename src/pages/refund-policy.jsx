@@ -11,7 +11,7 @@ const RefundPolicy = () => {
                         Refund Policy
                     </h1>
                     <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                        Effective Date: 01 November 2024
+                        Effective Date: 03 april 2025
                     </p>
                 </div>
 
@@ -25,7 +25,7 @@ const RefundPolicy = () => {
                         </h2>
                         <p>
                             This Refund Policy applies to services provided by
-                            <strong> DEVKIJAGATRAJ Private Limited </strong>
+                            <strong> DEVKIJAGATRAJ TECH PRIVATE LIMITED</strong>
                             ("Company", "we", "our", or "us"). By using our Services, you agree
                             to the refund terms outlined below.
                         </p>
@@ -109,11 +109,9 @@ const RefundPolicy = () => {
                         <p><strong>Email:</strong> DEVKIJAGATRAJ@gmail.com</p>
                         <p className="mt-2">
                             <strong>Address:</strong><br />
-                            Behind Bharat Petrol Pump
-                            <br />
-                            Jhansi – 284001
-                            <br />
-                            Uttar Pradesh, India
+                            c/o mohd ahsan <br />
+                            behind bharat petrol pump  <br />
+                            jhansi 284001 Uttar Pradesh,India
                         </p>
                     </div>
 

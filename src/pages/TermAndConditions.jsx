@@ -11,7 +11,7 @@ const Terms = () => {
             Terms and Conditions
           </h1>
           <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-            Effective Date: 01 November 2024
+            Effective Date: 03 april 2025
           </p>
         </div>
 
@@ -24,7 +24,7 @@ const Terms = () => {
               1. Introduction
             </h2>
             <p>
-              Welcome to <strong>DEVKIJAGATRAJ Private Limited</strong> ("Company", "we", "our", or "us").
+              Welcome to <strong>DEVKIJAGATRAJ TECH PRIVATE LIMITED</strong> ("Company", "we", "our", or "us").
               These Terms and Conditions ("Agreement") govern your use of our
               Software-as-a-Service (SaaS) platform and services related to the
               virtual digital assets business ("Services"). By accessing or
@@ -160,7 +160,7 @@ const Terms = () => {
               11. Contact Information
             </h2>
             <p>
-              DEVKIJAGATRAJ Private Limited<br />
+              DEVKIJAGATRAJ TECH PRIVATE LIMITED<br />
               Email: <span className="font-medium">DEVKIJAGATRAJ@gmail.com</span>
             </p>
           </div>
